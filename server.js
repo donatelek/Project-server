@@ -11,6 +11,10 @@ const {
 const {
     registerUser
 } = require('./Routes/Register')
+const {
+    respondNotFound,
+    respondWithError
+} = require('./handleErrors')
 
 const db = require('knex')({
     client: 'pg',
