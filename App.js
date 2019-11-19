@@ -15,23 +15,23 @@ const {
     registerUser
 } = require('./Routes/Register')
 
-// const db = require('knex')({
-//     client: 'pg',
-//     connection: {
-//         connectionString: process.env.DATABASE_URL,
-//         ssl: true
-//     }
-// });
-
 const db = require('knex')({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        user: 'postgres',
-        password: 'password',
-        database: 'Projectx'
+        connectionString: process.env.DATABASE_URL,
+        ssl: true
     }
 });
+
+// const db = require('knex')({
+//     client: 'pg',
+//     connection: {
+//         host: '127.0.0.1',
+//         user: 'postgres',
+//         password: 'password',
+//         database: 'Projectx'
+//     }
+// });
 
 
 
