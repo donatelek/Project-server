@@ -1,4 +1,4 @@
-const server = require('../app');
+const server = require('./app');
 function encrypt(text, crypto) {
     var cipher = crypto.createCipher('aes-256-ctr', 'password')
     var crypted = cipher.update(text, 'utf8', 'hex')
